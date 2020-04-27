@@ -24,7 +24,7 @@ namespace UniGitUtils
 		/// </summary>
 		/// <example>
 		/// <code>
-		/// var outputPath = "Assets/Scripts/GitCommitHash.cs";
+		/// var outputPath = "Assets/Scripts/GitInfo.cs";
 		///
 		/// var option = new CommitLogOption
 		///	(
@@ -33,7 +33,7 @@ namespace UniGitUtils
 		///		format: "%h %cd %cn %s"
 		/// );
 		/// 
-		/// var template = $@"public static class GitCommitHash
+		/// var template = $@"public static class GitInfo
 		/// {{
 		///     public const string BRANCH_NAME       = ""{GitCodeGenerator.BRANCH_NAME_TAG}"";
 		///     public const string COMMIT_HASH       = ""{GitCodeGenerator.COMMIT_HASH_TAG}"";
