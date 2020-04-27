@@ -7,9 +7,26 @@ Git のブランチ名やコミットハッシュ、コミットログを取得�
 ```cs
 using UniGitUtils;
 using UnityEditor;
+using UnityEngine;
 
 public static class Example
 {
+    [MenuItem( "Tools/Log" )]
+    private static void Log()
+    {
+        var option = new CommitLogOption
+        (
+            count: 10,
+            isNoMerges: false,
+            format: "%h %cd %cn %s"
+        );
+
+        Debug.Log( GitUtils.LoadBranchName() );
+        Debug.Log( GitUtils.LoadCommitHash() );
+        Debug.Log( GitUtils.LoadShortCommitHash() );
+        Debug.Log( GitUtils.LoadCommitLog( option ) );
+    }
+
     [MenuItem( "Tools/Generate" )]
     private static void Generate()
     {
