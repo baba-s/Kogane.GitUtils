@@ -2,6 +2,8 @@
 
 Git のブランチ名やコミットハッシュ、コミットログを管理するスクリプトを生成するエディタ拡張
 
+To display the menu items in English, add the define `KOGANE_ENGLISH` to your project.
+
 ## 使用例
 
 ```cs
