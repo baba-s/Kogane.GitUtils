@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-namespace UniGitUtils
+namespace Kogane
 {
 	/// <summary>
 	/// Git の情報を読み込むためのクラス

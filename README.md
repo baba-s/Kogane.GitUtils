@@ -1,11 +1,11 @@
-# Uni Git Utils
+﻿# Uni Git Utils
 
 Git のブランチ名やコミットハッシュ、コミットログを管理するスクリプトを生成するエディタ拡張
 
 ## 使用例
 
 ```cs
-using UniGitUtils;
+using Kogane;
 using UnityEditor;
 using UnityEngine;
 

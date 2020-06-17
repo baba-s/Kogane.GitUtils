@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace UniGitUtils
+namespace Kogane
 {
 	/// <summary>
 	/// Git に関するメニューを管理するクラス

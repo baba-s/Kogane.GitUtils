@@ -1,4 +1,4 @@
-﻿namespace UniGitUtils
+﻿namespace Kogane
 {
 	/// <summary>
 	/// <para>Git のコミットログを取得するオプションを管理する構造体</para>

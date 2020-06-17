@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEditor;
 
-namespace UniGitUtils
+namespace Kogane
 {
 	/// <summary>
 	/// Git の情報を管理するスクリプトを生成するためのクラス
