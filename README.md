@@ -1,4 +1,4 @@
-﻿# Uni Git Utils
+﻿# Kogane Git Utils
 
 Git のブランチ名やコミットハッシュ、コミットログを管理するスクリプトを生成するエディタ拡張
 
