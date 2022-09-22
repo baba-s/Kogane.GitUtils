@@ -65,16 +65,15 @@ namespace Kogane
                 UseShellExecute        = false,
             };
 
-            using ( var process = Process.Start( startInfo ) )
-            {
-                // git コマンドが終了するまで待機します
-                process.WaitForExit();
+            using var process = Process.Start( startInfo );
 
-                // Git の情報を読み込んだ際に末尾に改行コードが付与されているため
-                // 改行コードを取り除いた文字列を返すようにしています
-                var hash = process.StandardOutput.ReadToEnd().Trim();
-                return hash;
-            }
+            // git コマンドが終了するまで待機します
+            process.WaitForExit();
+
+            // Git の情報を読み込んだ際に末尾に改行コードが付与されているため
+            // 改行コードを取り除いた文字列を返すようにしています
+            var hash = process.StandardOutput.ReadToEnd().TrimEnd();
+            return hash;
         }
     }
 }
